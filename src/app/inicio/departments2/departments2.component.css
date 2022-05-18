@@ -1,0 +1,115 @@
+/* * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Raleway';
+  } */
+  
+  .grid-container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns : repeat(3,1fr);
+    grid-template-rows: repeat(2, 20vw);
+    grid-gap: 10px;
+  }
+  
+  .grid_image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.5s ease-in;
+  }
+  
+  .grid_item {
+    position: relative;
+  /*   overflow: hidden will prevent the image scaling to exceed the specified width. It will expand on back */
+    overflow: hidden; 
+  }
+  
+  /* .grid_item:hover {
+    opacity: 0;
+     animation: top_overlay 1s linear;
+  }
+   */
+  /* .grid_item .after {
+    position: absolute;
+      top: 50%;
+    left:50%;
+    transform : translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+      font-size : 2rem;
+      display: none;
+      color: red;
+  } */
+  
+  /* .grid_item:hover .after {
+    display: block;
+    background: #fff;
+    object-fit : cover;
+  } */
+  
+  .grid_item:hover .grid_image {
+    transform : scale(1.1);
+    filter: rgba(255, 0, 0, 0.486) blur(2px);
+    
+  }
+  img:hover{
+      opacity: 0.35;
+      cursor: pointer;
+  }
+  
+  .text {
+    font-size : 1.5rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #C0392B;
+    font-weight:900;
+    display: none;
+  }
+  
+  .online_view {
+    margin-top: 40px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #fff;
+    outline:none;
+    border: 1px solid #154b7a;
+  }
+  
+  button.online_view {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button.online_view:hover{
+    background-color: #E8F6F3;
+    color: #CA5D46;
+  }
+  
+  .grid_item:hover .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  /*   text to see, otherwise hides in the back */
+    z-index: 999;
+    animation : slide 0.7s ease;
+  }
+  
+  
+  @keyframes slide {
+    0%{
+      top: -50%;
+    }
+    100% {
+      top: 40%;
+    }
+  }
+
+  /* @media screen () {
+      
+  } */
