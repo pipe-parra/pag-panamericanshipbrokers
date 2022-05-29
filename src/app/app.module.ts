@@ -35,6 +35,7 @@ import { LngComponent } from './departments/lng/lng.component';
 import { OffshoreComponent } from './departments/offshore/offshore.component';
 import { NuevasConstruccionesComponent } from './departments/nuevas-construcciones/nuevas-construcciones.component';
 import { Navbar01Component } from './navbar01/navbar01.component';
+import { PlaysoundService } from './playsound.service';
 
 
 
@@ -78,7 +79,7 @@ import { Navbar01Component } from './navbar01/navbar01.component';
     AppRoutingModule,
     CommonModule 
   ],
-  providers: [CargarScriptsService],
+  providers: [CargarScriptsService, PlaysoundService],
   bootstrap: [AppComponent],
 
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

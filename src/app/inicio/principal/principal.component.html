@@ -1,6 +1,6 @@
 
-<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-    <div class="carousel-inner">
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false" onScroll="playSound()">
+    <div class="carousel-inner" >
       <div class="carousel-item active">
         <img src="assets/img/carousel-3.jpg" class="d-block w-100" alt="...">
         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
@@ -11,7 +11,7 @@
                         <h1 class="display-3 text-white animated slideInDown mb-4"><span class="text-primary"> 20 Ubicaciones</span></h1>
                         <p class="fs-5 fw-medium mb-4 pb-2" 
                         >Cubriendo los principales centros de envío.</p>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Leer más</a>
+                        <a href="" (click)="playSound()" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Leer más</a>
                        
                     </div>
                 </div>
