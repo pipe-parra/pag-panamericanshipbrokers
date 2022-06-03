@@ -28,17 +28,15 @@ const routes: Routes = [
    {path: 'people-network', component:PeopleNetworkComponent},
    {path: 'careers', component:CareersComponent},
 
-   {path: 'shipbroking', component:Shipbroking1Component,
-   children: [
-      {path: 'nuevas-construcciones', component:NuevasConstruccionesComponent},
-      {path: 'bulk', component:BulkComponent},
-      {path: 'liner', component:LinerComponent},
-      {path: 'lng', component:LngComponent},
-      {path: 'lpg', component:LpgComponent},
-      {path: 'offshore', component:OffshoreComponent},
-      {path: 'quimicos-tanqueros-pequenos', component:QuimicosTanquerosPequenosComponent},
-      {path: 'tanqueros', component:TanquerosComponent}
-   ]}
+   {path: 'shipbroking', component:Shipbroking1Component},
+   {path: 'nuevas-construcciones', component:NuevasConstruccionesComponent},
+   {path: 'bulk', component:BulkComponent},
+   {path: 'liner', component:LinerComponent},
+   {path: 'lng', component:LngComponent},
+   {path: 'lpg', component:LpgComponent},
+   {path: 'offshore', component:OffshoreComponent},
+   {path: 'quimicos-tanqueros-pequenos', component:QuimicosTanquerosPequenosComponent},
+   {path: 'tanqueros', component:TanquerosComponent}
    
 ];
 

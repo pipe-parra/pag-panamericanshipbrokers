@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CargarScriptsService } from '../cargar-script.service';
+import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
