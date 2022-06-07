@@ -13,7 +13,7 @@ import { FeatureComponent } from './inicio/feature/feature.component';
 import { PrincipalComponent } from './inicio/principal/principal.component';
 import { ContactComponent } from './inicio/contact/contact.component';
 import { ClientTestimoniosComponent } from './inicio/client-testimonios/client-testimonios.component';
-import { DepartmentsComponent } from './inicio/departments/departments.component';
+
 import { Shipbroking1Component } from './servicios/shipbroking1/shipbroking1.component';
 import { MarketintelligenceComponent } from './servicios/marketintelligence/marketintelligence.component';
 import { MarineserviceComponent } from './servicios/marineservice/marineservice.component';
@@ -22,7 +22,7 @@ import { NoticiasComponent } from './noticias/noticias.component';
 import { CargarScriptsService } from './cargar-script.service';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Departments2Component } from './inicio/departments2/departments2.component';
+
 import { Departments3Component } from './inicio/departments3/departments3.component';
 import { CareersComponent } from './careers/careers.component';
 import { PeopleNetworkComponent } from './people-network/people-network.component';
@@ -34,7 +34,6 @@ import { LpgComponent } from './departments/lpg/lpg.component';
 import { LngComponent } from './departments/lng/lng.component';
 import { OffshoreComponent } from './departments/offshore/offshore.component';
 import { NuevasConstruccionesComponent } from './departments/nuevas-construcciones/nuevas-construcciones.component';
-import { Navbar01Component } from './navbar01/navbar01.component';
 import { PlaysoundService } from './playsound.service';
 
 
@@ -53,13 +52,13 @@ import { PlaysoundService } from './playsound.service';
     PrincipalComponent,
     ContactComponent,
     ClientTestimoniosComponent,
-    DepartmentsComponent,
+
     Shipbroking1Component,
     MarketintelligenceComponent,
     MarineserviceComponent,
     QueHacemosComponent,
     NoticiasComponent,
-    Departments2Component,
+   
     Departments3Component,
     CareersComponent,
     PeopleNetworkComponent,
@@ -71,7 +70,7 @@ import { PlaysoundService } from './playsound.service';
     LngComponent,
     OffshoreComponent,
     NuevasConstruccionesComponent,
-    Navbar01Component
+    
 
   ],
   imports: [
@@ -79,7 +78,8 @@ import { PlaysoundService } from './playsound.service';
     AppRoutingModule,
     CommonModule 
   ],
-  providers: [CargarScriptsService, PlaysoundService],
+  providers: [CargarScriptsService, 
+              PlaysoundService],
   bootstrap: [AppComponent],
 
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
