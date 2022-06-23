@@ -35,7 +35,7 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
 	border-radius: 0;
   }
   
-  .nav-list {    margin-bottom: 25px;}
+  .nav-list {margin-bottom: 25px;}
   .nav-list > li { 
 	/*padding: 20px 15px 15px;
 	border-left: 1px solid #eee; */
@@ -53,7 +53,7 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
   .mega-dropdown-menu {
 	padding: 0;
 	text-align: center;
-	width: 900px;
+	width: 350px;
   }
   
   /*=======================*/
