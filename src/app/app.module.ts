@@ -36,6 +36,12 @@ import { OffshoreComponent } from './departments/offshore/offshore.component';
 import { NuevasConstruccionesComponent } from './departments/nuevas-construcciones/nuevas-construcciones.component';
 import { PlaysoundService } from './playsound.service';
 
+// firebase
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 
 
@@ -76,10 +82,15 @@ import { PlaysoundService } from './playsound.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule 
+    CommonModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+     
   ],
   providers: [CargarScriptsService, 
-              PlaysoundService],
+              PlaysoundService, ScreenTrackingService,UserTrackingService],
   bootstrap: [AppComponent],
 
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

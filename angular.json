@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "brokers:build:production",
+            "firebaseProject": "pagina-p-ship-brokers",
+            "firebaseHostingSite": "pagina-p-ship-brokers"
+          }
         }
       }
     }

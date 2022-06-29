@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "pagina-p-ship-brokers"
+  },
+  "targets": {
+    "pagina-p-ship-brokers": {
+      "hosting": {
+        "brokers": [
+          "pagina-p-ship-brokers"
+        ]
+      }
+    }
   }
 }

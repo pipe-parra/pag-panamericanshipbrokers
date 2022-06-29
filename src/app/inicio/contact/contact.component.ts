@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
+import { CargarScriptsService } from 'src/app/cargar-script.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(){}
+  
 
   ngOnInit(): void {
   }
