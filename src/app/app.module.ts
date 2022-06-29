@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -80,6 +82,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     CommonModule,
