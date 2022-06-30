@@ -16,26 +16,31 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
-                        <form class="contact-form">
+
+                        <form class="form-group" [formGroup]='contactForm'>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="name form-control border-0" placeholder="Nombre" style="height: 55px;">
+                                    <input type="text" class="name form-control border-0" placeholder="Nombre" style="height: 55px;" formControlName="name">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="email form-control border-0" placeholder="Correo" style="height: 55px;">
+                                    <input type="email" class="email form-control border-0" placeholder="Correo" style="height: 55px;" formControlName="email">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="phone form-control border-0" placeholder="Telefono" style="height: 55px;">
+                                    <input type="text" class="phone form-control border-0" placeholder="Telefono" style="height: 55px;" formControlName="phone">
                                 </div>
                                 
                                 <div class="col-12">
-                                    <textarea class="message form-control border-0" placeholder="Mensaje"></textarea>
+                                    <textarea class="message form-control border-0" placeholder="Mensaje" formControlName="message"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn w-100 py-3" 
-                                    style="background-color:#154b7a; color:white;" type="submit">Enviar</button>
+                                    <button type="reset" class="btn w-100 py-3" 
+                                    style="background-color:#154b7a; color:white;" 
+                                    [disabled]="contactForm.invalid"
+                                    (click)="sendForm(contactForm.value)">Enviar</button>
                                 </div>
                             </div>
+                            <p *ngIf="isSubmit">{{ submitMessage }}</p>
+
                         </form>
                     </div>
                 </div>

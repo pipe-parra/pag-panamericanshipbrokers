@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -44,6 +44,9 @@ import { environment } from '../environments/environment';
 import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FirestoreModule  } from '@angular/fire/firestore';
+
+import { AngularFireModule } from '@angular/fire/compat'; //para conectar con Firestore
 
 
 
@@ -82,6 +85,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
   ],
   imports: [
+    FirestoreModule,
+    ReactiveFormsModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
@@ -90,6 +95,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp(environment.firebase) //para conectaracon Firestore
      
   ],
   providers: [CargarScriptsService, 
