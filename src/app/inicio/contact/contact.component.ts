@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 import { provideFirestore,getFirestore, collection, CollectionReference } from '@angular/fire/firestore';
 import { Firestore } from 'firebase/firestore';
 import { FormfireService } from 'src/app/services/formfire.service';
-import { ModelForm } from 'src/app/models/modelForm';
+import { ModelForm } from 'src/app/models/ModelForm';
 
 @Component({
   selector: 'app-contact',

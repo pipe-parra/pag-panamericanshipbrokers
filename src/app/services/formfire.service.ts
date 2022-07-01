@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {AngularFirestore} from '@angular/fire/compat/firestore'; //para agregar firestore paso 2
-import { ModelForm } from '../models/modelForm';
+import { ModelForm } from '../models/ModelForm';
 
 @Injectable({
   providedIn: 'root'
