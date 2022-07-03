@@ -47,6 +47,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FirestoreModule  } from '@angular/fire/firestore';
 
 import { AngularFireModule } from '@angular/fire/compat'; //para conectar con Firestore
+import { FormfireService } from './services/formfire.service';
 
 
 
@@ -99,7 +100,7 @@ import { AngularFireModule } from '@angular/fire/compat'; //para conectar con Fi
      
   ],
   providers: [CargarScriptsService, 
-              PlaysoundService, ScreenTrackingService,UserTrackingService],
+              PlaysoundService, ScreenTrackingService,UserTrackingService, FormfireService],
   bootstrap: [AppComponent],
 
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
